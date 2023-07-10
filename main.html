@@ -1,0 +1,2187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="images/cogoport_icon.png" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">    
+  <style>
+    body{
+        margin: 0;
+    }
+    .navbar_001{
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        height: 47px;
+        padding: 8px 16px;
+        background: #fbdc00;
+    }
+
+    .logo_002{
+        text-align: right;
+        margin-left: 10px;
+    }
+
+    .company-name{
+        font-size: 30px;
+        font-family: "PT Sans",sans-serif;
+        font-weight: 200;
+        color: rgba(210, 32, 32, 0.94);
+    }
+
+    .gtp{
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .logo_001{
+        margin-left:  0px;
+        flex-grow: 1;
+    }
+
+    .middle_content_001{
+        font-family: "Ubuntu",sans-serif;
+        font-size: 14px;
+        display: flex;
+        flex-grow: 2;
+        line-height: 1.5;
+        color: #000;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .signup_001{
+        display: flex;
+        flex-grow: 1;
+        font-family: "Ubuntu",sans-serif;
+        font-weight: 500;
+    }
+
+    .inverted-symbol{
+        font-size: 8px;
+
+    }
+
+    .middle_tabs_001{
+        margin-left: 60px;
+        display: flex;
+        cursor: pointer;
+    }
+    .middle_tabs_001:hover{
+        color: #ee3425;
+    }
+
+    .signup_002{
+        margin-left: 19px;
+        display: flex; 
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    .signup_001{
+        align-items: center;  
+    }
+
+    .button {
+        background-color: rgb(219, 30, 30);
+        color: white;
+        border: none;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 8px;
+        font-family: "Ubuntu",sans-serif;
+        width: 90px;
+    }
+
+    .signup_003{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_039{
+        font-size: 14px;
+        margin-left: 6px;
+        margin-top: 3px;
+    }
+
+    .section_001{
+        display: flex;
+        padding: 16px;
+        height: 400px;
+        background-color: #fbdc00;
+        padding-top: 0px;
+    }
+
+    .section_002{
+        margin-left: 200px;
+        justify-content: center;
+        align-items: center   
+    }
+
+    .section_child_0{
+        margin-top: 120px;
+        margin-bottom: 20px;
+        font-family: "PT Sans",sans-serif;
+        font-size: 40px;
+        font-weight: 1000;
+    }
+
+    .section_child_1{
+        font-size:16px;
+        color: #434343;
+        font-family: "PT Sans",sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .section_child_2{
+        font-size:14px;
+        font-weight: 800;
+        font-family: "PT Sans",sans-serif;
+        margin-bottom: 5px;
+    }
+
+    .phone-input {
+        display: flex;
+    }
+
+    #country-code {
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 14px;
+   }
+
+   .whts{
+        border-radius: 14px;
+   }
+
+   .section_003{
+        height: 400px;
+        width: 500px;
+        flex-grow: 1;
+   }
+
+   .section_004{
+        display: flex;
+        margin-left: auto;
+        margin-right: 140px;
+        margin-bottom: 100px;
+        margin-top: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px; 
+
+        justify-content: center;
+        align-items: center;     
+   }
+
+   .section_005{
+        margin-left: 180px;
+        font-size: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-family: "Ubuntu",sans-serif;
+        text-align: center;
+   }
+
+   .section_006{
+        font-size: 40px;
+        font-weight: bolder;
+        margin-bottom: 12px;
+        color: #ee3425;
+   }
+
+   .section_007{
+        font-size: 16px;
+        font-family: "Ubuntu",sans-serif;
+        font-weight: bold;
+   }
+
+   .section_008{
+        margin-left: 168px;
+        margin-right: 168px;
+        margin-bottom: 20px;
+        font-family: "Ubuntu",sans-serif;
+        display: flex;
+        padding: 16px;
+        
+   }
+
+   .section_009{
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 80px;
+        line-height: 1.2;
+   }
+
+   .section_010{
+        color: #434343;
+        font-family: "PT Sans",sans-serif;
+        font-size: 14px;
+   }
+
+   .section_011{
+        text-align: right;
+        margin-left: 120px;
+   }
+
+
+
+
+   h3{
+        font-size: 28px;
+        line-height: 1.2;
+        text-align: center;
+        font-family: "Ubuntu",sans-serif;
+        margin-bottom: 1em;
+   }
+
+   .section_013{
+        background-color: rgb(255, 252, 247);;
+   }
+
+   .section_016{
+        display: flex;
+        margin: 14px 0;
+   }
+
+   .section_017{
+        margin-left: 168px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+   }
+
+   .section_015{
+        margin: 14px 0px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+   }
+
+   .section_018{
+        font-size: 24px;
+        width: 300px;
+        margin-top: 72px;
+        font-family: "Ubuntu",sans-serif;
+        line-height: 1.5;
+        margin-right: 50px;
+   }
+
+   .section_020{
+        display: flex;
+        justify-content: center;
+   }
+
+   .section_021{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 184px;
+        height: 160px;
+        padding: 10px 7px;
+        margin: 10px;
+        margin-right: 15px;
+        background-color: #fff;
+        border: 1.5px solid transparent;
+        border-radius: 10px;
+        box-shadow: 0 1px 6px rgba(169,188,218,.65);
+   }
+   .section_021:hover{
+        border: 1.5px solid #ee3425;
+   }
+   a{
+         text-decoration: none;
+         color: #ee3425;
+   }
+
+   .section_022{
+        margin-top: 5px;
+        margin-bottom: 1em;
+        font-family: "Ubuntu",sans-serif;
+        font-size: 16px;
+        line-height: 1.3em;
+        text-align: center;
+        color: #000;
+   }
+
+   .section_023{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        margin: 10px;
+        font-weight: bolder;
+        color: #ee3425;
+        cursor: pointer;
+        font-family: "PT Sans",sans-serif;
+        font-size: 14px;
+   }
+
+   .section_024{
+        margin-right: 4px;
+   }
+
+    .carousel {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 100px;
+    }
+
+    .slides-container {
+        display: flex;
+        width: 50%; /* Adjust this value based on the number of slides */
+        animation: slideAnimation 10s linear infinite;
+    }
+
+    .slide {
+        flex: 1 0 33.33%; /* Adjust this value based on the number of slides */
+    }
+
+    @keyframes slideAnimation {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }   
+
+    .section_025{
+        background-color: #fbdc00;
+        margin-bottom: 40px;
+    }
+
+    .section_026{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 168px;
+        margin-right: 168px;
+        padding: 16px;
+        box-sizing: border-box;
+        font-family: "PT Sans",sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .section_027{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        box-sizing: border-box;
+    }
+
+    .section_028{
+        margin-bottom: 10px;
+        font-size: 28px;
+        line-height: 1.2;
+        margin-top: 10px;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        text-align: center;
+    }
+
+    .section_029{
+        box-sizing: border-box;
+        font-family: "PT Sans",sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .section_030{
+        display: flex;
+        border: 1px solid #ee3425;
+        min-width: 72px;
+        height: 40px;
+        background-color: #ee3425;
+        border-radius: 4px;
+        align-items: center;
+        padding: 4px 16px;
+    }
+
+    .section_031{
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        font-family: "PT Sans",sans-serif;
+        line-height: 1.2;
+        font-size: 14px;
+        font-weight: 700;
+        margin-left: 10px;
+        margin-right:0px;
+    }
+
+    .section_032{
+        margin-left: 168px;
+        margin-right: 168px;
+        background-color: rgb(255, 252, 247);
+    }
+
+    .section_033{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(255, 252, 247);
+    }
+
+    .section_034{
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .section_035{
+        margin: 10px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .section_036{
+        height: 100px;
+        box-sizing: border-box;
+    }
+
+    .section_034{
+        font-family: "PT Sans", sans-serif;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    .section_037{
+        display: flex;
+        padding: 16px;
+        height: 400px;
+        background-color: white;
+        margin-left: 280px;
+        margin-right: 175px;
+        margin-bottom: 50px;
+    }   
+    .section_038{
+        font-size: 16px;
+        color: white;
+    } 
+
+    .section_040{
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px;
+
+    }
+
+    .section_041{
+        text-align: center;
+        font-size: 28px;
+        line-height: 1.2;
+        margin-top: 0px;
+        margin-bottom: 1em;
+    }
+   
+
+    .section_043{
+        width: calc(calc(100% / 3) - 20px);
+        margin-right: 10px;
+        margin-bottom: 40px;
+        margin-left: 10px;
+        overflow: hidden;
+        text-align: start;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 3px 6px hsla(0,0%,79%,.5);
+    }
+   
+    .section_042{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -10px;
+        margin-left: -10px;
+        box-sizing: border-box ;
+    }
+
+    .section_044{
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+
+    .section_045{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 16px;      
+        box-sizing: border-box;  
+    }
+
+    .section_046{
+        margin-bottom: 5px;
+        font-size: 16px!important;
+        color: #ee3425;
+        margin-top: 0;
+        font-family: "Ubuntu",sans-serif;
+        text-align: start;
+        line-height: 1.5;
+    }
+
+    .section_047{
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: #000!important;  
+        margin-top: 0;
+        font-family: "Ubuntu",sans-serif;
+        box-sizing: border-box;  
+        line-height: 1.5;    
+    }
+
+    .section_048{
+        max-height: calc(1.4rem * 3);
+        overflow: hidden;    
+        font-size: 16px;    
+        margin-top: 0;
+        margin-bottom: 1em;    
+        box-sizing: border-box;
+        text-align: start;
+        line-height: 1.5;
+        font-family: "PT Sans",sans-serif;;
+    }
+
+    .section_049{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .section_050{
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        color: #ee3425;
+        cursor: pointer;    
+        box-sizing: border-box;
+        font-family: "PT Sans",sans-serif;
+        font-size: 14px;
+        line-height: 1.5;    
+    }
+
+    .section_051{
+        margin-bottom: 5px;
+        font-size: 14px!important;
+        color: #9a9a9a;    
+        margin-top: 0px;  
+        font-family: "Ubuntu",sans-serif;
+        box-sizing: border-box;
+        line-height: 1.5;  
+    }
+
+    .section_052{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;     
+        box-sizing: border-box;  
+    }
+
+    .section_053{
+        color: #fff;
+        background-color: #ee3425;
+        border: 1px solid #ee3425;   
+        min-width: 72px;
+        height: 36px;     
+        width: fit-content;
+        padding: 8px 42px!important;
+        font-family: "PT Sans",sans-serif;
+        font-size: 14px!important;
+        font-weight: 700!important;   
+        border-radius: 4px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.2;
+        box-sizing: border-box;     
+    }
+
+    .section_054{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 120px;
+        margin-top: 20px;
+        background-color: #fbdc00;   
+        box-sizing: border-box;     
+    }
+
+    .section_054:after{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        content: " ";
+        background-color: #fff;
+        border-bottom-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+    }
+
+    .section_055{
+        width: 20%;
+        padding: 20px;
+        margin: 20px;
+        box-sizing: border-box;        
+    }
+
+    .section_056{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .section_057{
+        margin: 0;
+        font-size: 28px;
+        line-height: 1.2;
+        font-family: "Ubuntu",sans-serif;
+        box-sizing: border-box;        
+    }
+
+    .section_058{
+        font-size: 16px;
+        box-sizing: border-box;
+        font-family: "PT Sans",sans-serif;
+        line-height: 1.5;
+    }
+
+    .section_059{
+        box-sizing: border-box;
+        display: inline-block;
+        width: 250px;
+        height: 40px;
+        padding: 10px;
+        border: 2px solid transparent;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        outline: none;        
+    }
+
+    .section_060{
+        color: #fff;
+        background-color: #ee3425;
+        border: 1px solid #ee3425;        
+        min-width: 72px;
+        padding: 4px 16px;
+        width: 120px!important;
+        height: 40px!important;
+        text-align: center;
+        text-decoration: none;
+        background: #ee3425;
+        border-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;        
+        outline: none;
+        transition: color .1s linear,background-color .1s linear,border-color .1s linear;
+        will-change: color,background-color,border-color;
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        font-family: "PT Sans",sans-serif;
+        justify-content: center;
+        line-height: 1.2; 
+        font-size: 14px!important;
+        font-weight: 700!important;  
+        box-sizing: border-box;   
+        line-height: 1.5;   
+
+    }
+
+    .section_061{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 50px 50px;
+        font-family: "PT Sans",sans-serif;;
+        background: #fbdc00;        
+    }
+
+    .section_062{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;        
+    }
+
+    .section_063{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        text-decoration: underline; 
+        box-sizing: border-box;       
+        font-family: "PT Sans",sans-serif;
+        color: #434343;
+    }
+
+    .section_064{
+        display: flex;
+        flex-direction: column; 
+        box-sizing: border-box;       
+    }
+
+    .section_065{
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    .section_066{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 8px; 
+        box-sizing: border-box; 
+        font-family: "PT Sans",sans-serif;;      
+    }
+
+    .section_067{
+        font-weight: 400;
+        color: #000;
+        text-decoration: none;    
+        box-sizing: border-box;
+        font-family: "PT Sans",sans-serif;
+        font-size: 14px;
+        line-height: 1.5;    
+    }
+
+    .section_068{
+        margin-top: 0;
+        margin-bottom: 1em;   
+        font-family: "Ubuntu",sans-serif;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+
+    .section_069{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px 0;
+        background-color: #ebbe00;      
+        box-sizing: border-box;  
+        line-height: 1.5;
+    }
+
+    .section_070{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;   
+        box-sizing: border-box;   
+        line-height: 1.5;  
+    }
+
+    .section_071{
+        width: fit-content;
+        line-height: 2rem;
+        color: #000;
+        text-decoration: none;   
+        box-sizing: border-box; 
+        font-family: "PT Sans",sans-serif;
+        font-size: 14px; 
+    }
+
+    .section_072{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 8px 30px;
+        background: #ebbe00;   
+        box-sizing: border-box;    
+        line-height: 1.5; 
+    }
+
+    .section_073{
+        display: flex;
+        align-items: center;    
+        box-sizing: border-box;
+        line-height: 1.5;    
+    }
+
+    .section_074{
+        display: flex;
+        margin-left: 10px;
+        font-family: "Ubuntu",sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        list-style-type: none;   
+        box-sizing: border-box;  
+        line-height: 1.5;
+        color: #434343;   
+    }
+    
+    .section_075{
+        margin-right: 5px;
+        cursor: pointer;    
+        box-sizing: border-box;
+        font-family: "Ubuntu",sans-serif;;
+        font-size: 12px;
+        font-weight: 700;
+        list-style-type: none;  
+        line-height: 1.5;  
+        color: #434343;        
+    }
+
+    .section_076{
+        display: flex;
+        align-items: center;  
+        box-sizing: border-box; 
+        line-height: 1.5;     
+    }
+
+    .section_077{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        background: transparent;
+        border-radius: 8px;  
+        box-sizing: border-box;
+        line-height: 1.5;      
+    }
+
+    .section_078{
+        display: flex;
+        align-items: center;
+        cursor: pointer;      
+        box-sizing: border-box;  
+    }
+
+    .section_079{
+        margin-bottom: 6px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #ee3425;
+        text-decoration: underline;     
+        box-sizing: border-box;
+        cursor: pointer;   
+        font-family:  "PT Sans",sans-serif;
+        line-height: 1.5;
+    }
+    .section_080{
+        padding: 8px 30px;
+    }
+
+    .section_081{
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px;   
+        box-sizing: border-box;     
+    }
+
+    .section_082{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;        
+        box-sizing: border-box;
+        line-height: 1.5;
+    }
+
+    .section_083{
+        font-size: 28px;
+        line-height: 1.2;
+        margin-top: 0;
+        margin-bottom: 1em;
+        box-sizing: border-box;
+    }
+
+    .section_084{
+        display: flex;
+        justify-content: space-between;     
+        box-sizing: border-box;   
+        line-height: 1.5;
+    }
+
+    .section_085{
+        width: 200px;
+        padding: 20px;
+        margin: 0 20px;
+        color: #000!important;
+        border-radius: 20px; 
+        background-color: #fbdc00;
+        border: #fbdc00;  
+        min-width: 72px;
+        height: 36px;  
+        outline: none;
+        transition: color .1s linear,background-color .1s linear,border-color .1s linear;
+        will-change: color,background-color,border-color;       
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        font-family: var(--font-family);    
+        justify-content: center;
+        line-height: 1.2;
+        font-size: 14px!important;
+        font-weight: 700!important;
+        box-sizing: border-box;
+    }
+
+    .section_086{
+        box-sizing: border-box;
+        cursor: pointer;
+        font-family: "PT Sans",sans-serif;
+        line-height: 1.2;
+        font-size: 14px!important;
+        font-weight: 700!important;
+    }
+
+    .section_087{
+        position: relative;
+        display: flex;
+        box-sizing: border-box;
+        line-height: 1.5;
+    }
+
+    .section_088{
+        display: none;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5;        
+    }
+
+    .section_089{
+        width: 560px;
+        height: 320px;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .section_090{
+        margin-bottom: 120px;
+        width: 300px;
+        padding: 16px;
+        border-radius: 10px;
+        box-shadow: 0 1px 6px rgba(169,188,218,.65);     
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5;           
+    }
+
+    .section_091{
+        top: 104px;
+        left: 300px;
+        position: absolute;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .section_092{
+        width: 300px;
+        padding: 16px;
+        border-radius: 10px;
+        box-shadow: 0 1px 6px rgba(169,188,218,.65); 
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5;       
+    }
+
+    .section_093{
+        bottom: 116px;
+        left: 300px;        
+        position: absolute;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .section_094{
+        font-weight: 600;
+        color: #ee3425;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 1em;
+        box-sizing: border-box;
+        font-family: "PT Sans",sans-serif;
+        line-height: 1.5;
+    }
+
+    .section_095{
+        padding-bottom: 5px;
+        padding-left: 8px;
+        margin: 0;
+        font-size: 16px;
+        box-sizing: border-box;
+        font-family: "PT Sans",sans-serif;
+        line-height: 1.5;
+        color: #434343;
+    }
+
+    .section_096{
+        display: flex;
+        align-items: center;
+        padding: 0 0 10px;
+        margin: 0;
+        list-style-position: outside;   
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: "PT Sans",sans-serif;   
+        color: #434343;
+    }
+
+    .section_097{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        font-family: "PT Sans",sans-serif;
+        font-size: 14px;        
+        line-height: 1.5;
+        color: #434343;
+    }
+
+    .section_098{
+        top: 104px;
+        right: 300px;        
+        position: absolute;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: "PT Sans",sans-serif; 
+        color: #434343;        
+    }
+
+    .section_099{
+        margin-bottom: 120px;
+        width: 300px;
+        padding: 16px;
+        border-radius: 10px;
+        box-shadow: 0 1px 6px rgba(169,188,218,.65);     
+        box-sizing: border-box;   
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: "PT Sans",sans-serif; 
+        color: #434343;         
+    }
+
+    .section_101{
+        right: 300px;
+        bottom: 116px;
+        position: absolute;  
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: "PT Sans",sans-serif; 
+        color: #434343;             
+    }
+
+    .section_102{
+        width: 300px;
+        padding: 16px;
+        border-radius: 10px;
+        box-shadow: 0 1px 6px rgba(169,188,218,.65);      
+        box-sizing: border-box; 
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: "PT Sans",sans-serif; 
+        color: #434343;         
+    }
+
+    .section_103{
+        padding-left: 8px;
+        font-size: 20px;
+        font-weight: 600;        
+    }
+
+    .section_104{
+        display: flex;
+        margin-top: 5px;
+        box-sizing: border-box;        
+        line-height: 1.5;
+    }
+
+    .section_105{
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;       
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5; 
+    }
+
+    .section_106{
+        width: 110px;
+        min-width: 110px;  
+        display: block;
+        position: relative;      
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .section_107{
+        height: 41px;
+        border: 1px solid #e0e0e0;
+        border-right: none;
+        border-radius: 20px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        outline: none;      
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5; 
+        cursor: pointer;
+        display: flex;
+        overflow: hidden;
+        padding: 0;         
+    }
+
+    .section_108{
+        align-items: center;
+        background-color: #fff;
+        display: flex;
+        border: none;
+        cursor: pointer;
+        flex-grow: 0;
+        justify-content: center;
+        margin: 0;
+        overflow: hidden;
+        padding: 8px 12px;
+        width: 100%;   
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.5;     
+    }
+
+    .section_109{
+        font-size: 16px;
+        padding-left: 26px;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        display: block;
+        flex: 1 1;
+        font-family: "PT Sans",sans-serif;;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+        outline: 0;
+        overflow: hidden;
+        padding: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;    
+        box-sizing: border-box;    
+        cursor: pointer;
+        line-height: 1.5;
+    }
+
+    .section_110{
+        padding-right: 16px;
+        align-items: center;
+        background-color: #fff;
+        display: flex;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-family: "PT Sans",sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .section_111{
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 41px!important;
+        padding-right: 100px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-left: none!important;
+        border-radius: 20px!important;
+        border-top-left-radius: 0!important;
+        border-bottom-left-radius: 0!important;
+        outline: none!important;        
+    }
+
+    .section_112{
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        width: 90px;
+        padding: 2px 4px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        background: #36bb22;
+        border: 1px solid #36bb22;
+        border-radius: 12px;     
+        font-family: "PT Sans",sans-serif;;
+        font-size: 14px!important;
+        font-weight: 700!important;   
+        box-sizing: border-box;            
+    }
+
+
+
+
+
+  </style>
+  <script>
+    const slideDuration = 10000; // Adjust the duration (in milliseconds)
+
+    function startCarousel() {
+    setInterval(() => {
+        const slidesContainer = document.querySelector('.slides-container');
+        const firstSlide = slidesContainer.querySelector('.slide');
+
+        slidesContainer.appendChild(firstSlide.cloneNode(true));
+        slidesContainer.removeChild(firstSlide);
+    }, slideDuration);
+    }
+
+    startCarousel();   
+  </script>
+</head>
+<body>
+  <div class="navbar_001">
+    <div class="logo_001">
+        <div class="logo_002">
+            <img src="images/1114.svg" alt="">
+        </div>
+    </div>
+    <div class="middle_content_001">
+        <div class="middle_tabs_001" role="button">Products <img src="images/1139.png" alt=""></div>
+        <div class="middle_tabs_001">Partners <img src="images/1139.png" alt=""></div>
+        <div class="middle_tabs_001">Tools <img src="images/1139.png" alt=""></div>
+        <div class="middle_tabs_001">Company <img src="images/1139.png" alt=""></div>
+        <div class="middle_tabs_001">Knowledge Center <img src="images/1139.png" alt=""></div>
+        <div class="middle_tabs_001">Contact Us</div> 
+    </div>
+    <div class="signup_001">
+        <div class="signup_002 singup_003">
+            <img height="22" width="22" src="images/1115.svg" alt="">
+            <div class="section_039">login</div>
+            
+        </div>
+        <div class="signup_002"><button class="button">Sign Up</button></div>
+    </div>
+  </div>
+  <div class="section_100">
+    <div class="section_001">
+        <div class="section_002">
+            
+                <div class="section_child_0">
+                    Grow Faster, Go Global.
+                </div>
+                <div class="section_child_1">
+                    Strengthen your Support, and Scale your Business <br>
+                    with Reliable Shipping Cashflows.
+                </div>
+                <div class="section_child_2">
+                    Talk to us now!
+                </div>
+                <div class="section_104">
+                    <div class="section_105">
+                        <div class="section_106">
+                            
+                            <div class="section_107">
+                                <div class="section_108" aria-label="toggle menu" role="button" tabindex="0">
+                                    <input style="box-sizing: border-box" list name= "mobile_country_code" type="hidden" value="+91">
+                                    <img src="images/1137.svg" width="20" height="20" alt="">
+                                    <div style="font-size: 16px; padding-left: 8px;" class="section_109">+91</div>
+                                </div>
+                                <div class="section_110" aria-label="button" role="button" tabindex="0">
+                                    <img src="images/1135.svg" width="12px" height="12px"  alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <input placeholder="Whatsapp number" class="section_111" type="number">
+                        <button class="section_112" type="submit">
+                            <div>Get Started</div>
+                        </button>
+                    </div>
+                </div>           
+            
+        </div>
+        <div class="section_003">
+            <video width="850" height="441.5" autoplay>
+                <source src="cogoverse_desktop_3_webm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+        </div>
+      </div>    
+  </div>
+
+  <div>
+    <div class="section_004">
+        <div class="section_005">
+            <div class="section_006">180+</div>
+            <div class="section_007">Countries Served</div>
+        </div>
+        <div class="section_005">
+            <div class="section_006">10,000</div>
+            <div class="section_007">Ports Pairs Served</div>
+        </div>
+        <div class="section_005">
+            <div class="section_006">30,000+</div>
+            <div class="section_007">Tons of Air Cargo Moved</div>
+        </div>
+        <div class="section_005">
+            <div class="section_006">700,000</div>
+            <div class="section_007">Containers Moved</div>
+        </div>
+    </div>
+  </div>
+  <div style="background-color: rgb(255, 252, 247);">
+    <div class="section_008">
+        <div class="section_012">
+            <div class="section_009">One Stop Solution for Your <br>Supply Chain</div>
+            <div class="section_010">Connected Shipping, Finance, and Trade-tech, to Power Global Trade and Supply Chains.</div>            
+        </div>
+        <div class="section_011">
+            <img src="images/map-supply-chain.webp" width="500" height="300" alt="Italian Trulli">
+        </div>
+    </div>
+    <div class="section_013">
+        <div class="section_017">
+            <div class="section_014">
+                <h3>Our Products</h3>
+            </div>
+            <div class="section_015">
+                <div class="section_016">
+                    <h4 class="section_018">End to End Cross Border  Logistics</h4>
+                    <div class="section_020">
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/1.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">Ocean: FCL</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2220.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">Ocean: LCL</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2221.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">International Air</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2222.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">Customs, CFS, & <br>Handling</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="section_016">
+                    <h4 class="section_018">Domestic Logistics</h4>
+                    <div class="section_020">
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2223.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">FTL, PTL</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2224.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">Trailer & Rail <br>Container Haulage</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                    </div>                   
+                </div>
+                <div class="section_016">
+                    <h4 class="section_018">Supply Chain Solutions</h4>
+                    <div class="section_020">
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2225.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">CogoAssured</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2226.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">Domestic Fulfilment</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2227.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">Door to Door <br>Shipments</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2228.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">Cargo Insurance</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                    </div>                   
+                </div>
+                <div class="section_016">
+                    <h4 class="section_018">Financial Services</h4>
+                    <div class="section_020">
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2229.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">Pay Later</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2230.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">Export Factoring</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                    </div>                   
+                </div>
+                <div class="section_016">
+                    <h4 class="section_018">Trade Management <br> Solutions</h4>
+                    <div class="section_020">
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2231.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">Freight Rates & <br>Schedules</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2232.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">Quick Premium <br>Quotations</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2233.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">Duties & Taxes <br>Calculator</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="section_021">
+                                <img src="images/2234.svg" width="60" height="60" alt="">
+                                <h4 class="section_022">Tracking & Visibility</h4>
+                                <span class="section_023">
+                                    <span class="section_024">Find Out More</span>
+                                    <img src="images/rightarrow.svg" alt="">
+                                </span>
+                            </div>
+                        </a>
+                    </div>                   
+                </div>
+            </div>            
+        </div>
+    </div>
+  </div>
+  <div>
+    <h3 style="background-color: #fff; margin-bottom: 40px;">Trusted by</h3>
+
+        <div class="carousel">
+            <div class="slides-container">
+                <div class="slide">
+                <img width="146" height="73" src="images/10.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                <img width="146" height="73" src="images/2.webp" alt="Image 2">
+                </div>
+                <div class="slide">
+                <img width="146" height="73" src="images/3.png" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img width="146" height="73" src="images/4.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                <img width="146" height="73" src="images/11.png" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img width="146" height="73" src="images/7.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img width="146" height="73" src="images/8.png" alt="Image 2">
+                </div>
+                <div class="slide">
+                <img width="146" height="73" src="images/10.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                <img width="146" height="73" src="images/2.webp" alt="Image 2">
+                </div>
+                <div class="slide">
+                <img width="146" height="73" src="images/3.png" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img width="146" height="73" src="images/4.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                <img width="146" height="73" src="images/11.png" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img width="146" height="73" src="images/7.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img width="146" height="73" src="images/8.png" alt="Image 2">
+                </div>                
+            </div>          
+          </div>
+
+  </div> 
+  
+  <div class="section_025">
+        <div class="section_026">
+            <div class="section_027">
+                <h3 class="section_028">Ready to take your Supply Chain to the Next Level?</h3>
+            </div>
+            <a class="section_029">
+                <button class="section_030">
+                    <div class="section_031">Get Started</div>
+                    <img src="images/rightarrowsolid.png" alt="">
+                </button>
+            </a>
+        </div>
+  </div>
+
+  <div class="section_081">
+    <div class="section_082">
+        <h3 class="section_083">How it Works</h3>
+        <div class="section_084">
+            <button class="section_085">
+                <span class="section_086">For Cargo Owners</span>
+            </button>
+            <button class="section_085" style="background-color: #e5dfdf; border: grey;">
+                <span class="section_086">For Logistics Parnter</span>
+            </button>
+        </div>
+        <div>
+            <div class="section_087">
+                <div class="section_088">
+                    <img src="images/1122.png" class="section_089" alt="">
+                </div>
+                <div>
+                    <div class="section_090">
+                        <p class="section_094">State 1:</p>
+                        <div class="section_096">
+                            <img src="images/1123.svg" width="40" height="40" alt="">
+                            <div class="section_103">Discover</div>
+                        </div>
+                        <span style="display: flex;">
+                            <div>•</div>
+                            <p class="section_095">Spot and Contract Rates for Logistics</p>
+                        </span>
+                        <span style="display: flex;">
+                            <div>•</div>
+                            <p class="section_095">Service details, Trade Compliance/ Regulatory Requirements</p>
+                        </span>
+                        <span style="display: flex;">
+                            <div>•</div>
+                            <p class="section_095">Knowledge and Insights on Trade, Logistics, Finance, Supply Chains</p>
+                        </span>
+                    </div>
+                    <div class="section_091">
+                        <img src="images/1124.png" width="150" height="59" alt="1124.">
+                    </div>
+                    <div class="section_092">
+                        <p class="section_094">State 2:</p>
+                        <div class="section_096">
+                            <img src="images/1125.svg" width="40" height="40" alt="">
+                            <div class="section_103">Plan & Book</div>
+                        </div>
+                        <span style="display: flex;">
+                            <div>•</div>
+                            <p class="section_095">Route, Service Schedules, Inventory, and Cashflow planning</p>
+                        </span>
+                        <span style="display: flex;">
+                            <div>•</div>
+                            <p class="section_095">Book with upfront visibility of service terms and inclusions</p>
+                        </span>
+                    </div>
+                    <div class="section_093">
+                        <img src="images/1126.png" width="150" height="59" alt="1124.">
+                    </div>
+                </div>
+                <div class="section_097">
+                    <img src="images/1127.png" width="560" height="320" alt="">
+                </div>
+                <div>
+                    <div class="section_098">
+                        <img src="images/1128.png" width="150" height="59" alt="">
+                    </div>
+                    <div class="section_099">
+                        <p class="section_094">Stage 3:</p>
+                        <div class="section_096">
+                            <img src="images/1130.svg" width="40" height="40" alt="">
+                            <div class="section_103">Execute</div>
+                        </div>
+                        <span style="display: flex;">
+                            <div>•</div>
+                            <p class="section_095">Ocean and Air Cargo Tracking</p>
+                        </span>
+                        <span style="display: flex;">
+                            <div>•</div>
+                            <p class="section_095">Documentation and Filings, Handled</p>
+                        </span>       
+                        <span style="display: flex;">
+                            <div>•</div>
+                            <p class="section_095">Multi-modal: Smooth coordination and handovers between various service providers and stakeholders</p>
+                        </span>                        
+
+                    </div>
+                    <div class="section_101">
+                        <img src="images/1131.png" width="150" height="59" alt="">
+                    </div>
+                    <div class="section_102">
+                        <p class="section_094">Stage 4:</p>
+                        <div class="section_096">
+                            <img src="images/1133.svg" width="40" height="40" alt="">
+                            <div class="section_103">Finance</div>
+                        </div>
+                        <span style="display: flex;">
+                            <div>•</div>
+                            <p class="section_095">Deferred payment on Logistics with PayLater</p>
+                        </span>
+                        <span style="display: flex;">
+                            <div>•</div>
+                            <p class="section_095">Trade Finance for your Cargo with Export Factoring</p>
+                        </span>                               
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div style="padding-bottom: 80px; padding-top: 30px; background-color: rgb(255, 252, 247);">
+    <div class="section_032">
+        <h3 class="section_014">Industries Served</h3>
+        <div class="section_033">
+            <div class="section_035">
+                <img class="section_036" src="images/111.svg" alt="chemical">
+                <div class="section_034">Chemicals</div>
+            </div>
+            <div class="section_035">
+                <img class="section_036" src="images/112.svg" alt="pharmaceuticals">
+                <div class="section_034">Pharmaceuticals</div>                
+            </div>
+            <div class="section_035">
+                <img class="section_036" src="images/113.svg" alt="electronics">
+                <div class="section_034">Electronics</div>                 
+            </div>
+            <div class="section_035">
+                <img class="section_036" src="images/114.svg" height="87" width="87" alt="white goods">
+                <div class="section_034">White Goods</div>                 
+            </div>
+            <div class="section_035">
+                <img class="section_036" src="images/115.svg" alt="textiles">
+                <div class="section_034">Textiles</div>                 
+            </div>
+            <div class="section_035">
+                <img class="section_036" src="images/116.svg" alt="manufacturing">
+                <div class="section_034">Manufacturing</div>                 
+            </div>
+            <div class="section_035">
+                <img class="section_036" src="images/117.svg" alt="agriculture">
+                <div class="section_034">Agriculture</div>                 
+            </div>                                                
+        </div>
+    </div>
+  </div>
+  <div class="section_037">
+    <div >
+        <div class="section_child_0">
+            Get Started Today
+        </div>
+        <div class="section_child_1">
+            Plan, Book and Finance your shipment in one place.
+        </div>
+        <div class="section_child_2" style="font-weight: 100;">
+            Experience how Cogoport's Global Trade can Turbocharge your Business.
+        </div>
+        <a class="section_029">
+            <button style="padding-left: 30px; padding-right: 40px; margin-top: 25px; border-radius: 8px;" class="section_030">
+                <div class="section_031">Get Started</div>
+            </button>
+        </a>
+    </div>
+    <div class="section_003">
+        <img src="images/1111.webp" width="280px" height="300px" style="margin-left: 260px; margin-top: 50px" alt="">
+    </div>
+  </div>  
+  <div>
+    <div style="height: 500px; cursor: pointer;">
+        <img src="images/1112.png" width="100%" height="500px" alt="">
+    </div>
+    <div>
+        <div style="background-color: #ee3425;"  class="section_025">
+            <div style="margin-left: 180px; margin-right: 180px;" class="section_026">
+                <div class="section_027">
+                    <h3 style="color: white; text-align: left;" class="section_028">Grow Faster with Cogoport</h3>
+                    <p class="section_038">Know more about Cogoport's Global Trade Platform
+                        <sup>TM</sup>
+                    </p>
+                </div>
+                <a class="section_029">
+                    <button style="background-color: #fbdc00;" class="section_030">
+                        <div style="color: #000;" class="section_031">Know More</div>
+                        <img src="images/rightarrowsolid.svg" alt="">
+                    </button>
+                </a>
+            </div>
+      </div>>
+    </div>
+  </div>
+    <div class="section_040" style="width: 1200px;">
+        <div>
+            <h3 class="section_041">Blogs</h3>
+            <div class="section_042"> 
+                <div class="section_043">
+                    <a href="">
+                        <img class="section_044" src="images/1116.jpeg" height="200" width="376" alt="">
+                    </a>
+                    <div class="section_045">
+                        <h4 class="section_046">Trade News</h4>
+                        <h4 class="section_047">Cogoport Enables Movement of 11 Envirotainer Containers from India to Italy </h4>
+                        <p class="section_048">Cogoport’s collective logistics and technical expertise came in handy as our operations and technical teams went the extra mile and designed bespoke solutions on the go.</p>
+                        <div class="section_049">
+                            <span class="section_050">
+                                Read More
+                                <img src="images/1118.PNG" width="20" height="16" alt="">
+                            </span>
+                            <h4 class="section_051">05 July 2023</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_043">
+                    <a href="">
+                        <img class="section_044" src="images/1117.jpeg" height="200" width="376" alt="">
+                    </a>
+                    <div class="section_045">
+                        <h4 class="section_046">Expert Speak</h4>
+                        <h4 class="section_047">Cogoport: A Global Trade Platform </h4>
+                        <p class="section_048">Cogoport leverages technology and caters to enterprises of all sizes. Our solutions improve predictability and enhance human capabilities.</p>
+                        <div class="section_049">
+                            <span class="section_050">
+                                Read More
+                                <img src="images/1118.PNG" width="20" height="16" alt="">
+                            </span>
+                            <h4 class="section_051">03 July 2023</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_043">
+                    <a href="">
+                        <img class="section_044" src="images/1118.jpeg" height="200" width="376" alt="">
+                    </a>
+                    <div class="section_045">
+                        <h4 class="section_046">Industry Basics</h4>
+                        <h4 class="section_047">Understanding Lean Supply Chain Management: Definition and Considerations</h4>
+                        <p class="section_048">Lean Supply Chain Management represents the extension of Lean Thinking across the entire supply chain. So, what are the benefits and key components? Read on!</p>
+                        <div class="section_049">
+                            <span class="section_050">
+                                Read More
+                                <img src="images/1118.PNG" width="20" height="16" alt="">
+                            </span>
+                            <h4 class="section_051">03 July 2023</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_052">
+                <a href="">
+                    <button class="section_053">
+                        <span>View All</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section_054">
+        <div class="section_055">
+            <img class="section_056" src="images/1119.png" loading="lazy" width="200" height="163" alt="" style="color: transparent;">
+        </div>
+        <div style="box-sizing: border-box;">
+            <h3 class="section_057">Subscribe to our newsletter now!</h3>
+            <span class="section_058">Don’t miss out on the latest happenings at Cogoport.</span>
+            <div style="margin-top: 20px; box-sizing: border-box;">
+                <form style="margin-top: 0em; display: flex; box-sizing: border-box; line-height: 1.5;">
+                    <div>
+                        <input class="section_059" type="email" placeholder="Enter your email here" required value>
+                    </div>
+                    <div>
+                        <button class="section_060" type="submit">Subscribe
+                            <img style="margin-left: 2px;" src="images/1120.png" width="20" height="16" alt="">
+                        </button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="section_061">
+        <div class="section_062">
+            <span class="section_063">Products</span>
+            <div class="section_064">
+                <div class="section_065">
+                    <span class="section_066">
+                        <a class="section_067" href="">Global Trade Platform</a>
+                    </span>
+                </div>
+                <div class="section_065">
+                    <h4 class="section_068">Cross-border Logistics</h4>
+                    <span class="section_066">
+                        <a class="section_067" href="">Oceal: FCL</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Oceal: LCL</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">International Air</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Customs, CFS, and Handling</a>
+                    </span>                                                            
+                </div>
+                <div class="section_065">
+                    <h4 class="section_068">Domestic Logistics</h4>
+                    <span class="section_066">
+                        <a class="section_067" href="">Surface: FTL, PTL, Rail</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Trailer & Rail Container Haulage</a>
+                    </span>                     
+                </div>
+                <div class="section_065">
+                    <h4 class="section_068">Trade Management Solutions</h4>
+                    <span class="section_066">
+                        <a class="section_067" href="">Freight Rates & Schedules</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Quick Premium Quotations</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Duties & Taxes Calculator</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Tracking & Visibility</a>
+                    </span>                     
+                </div>
+                <div class="section_065">
+                    <h4 class="section_068">CogoMaps</h4>
+                    <span class="section_066">
+                        <a class="section_067" href="">Shipment Planner</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Trade Info</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Global Routes</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Live Congestion</a>
+                    </span>                    
+                </div>
+            </div>
+        </div>
+        <div class="section_062">
+            <span class="section_063" style="height: 38px;"></span>
+            <div class="section_064">
+                <div class="section_065">
+                    <h4 class="section_068">Supply Chain Solutions</h4>
+                    <span class="section_066">
+                        <a class="section_067" href="">CogoAssured</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Fulfilment Logistics</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Door to Door Shipments</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Cargo Insurance</a>
+                    </span>                                                            
+                </div>
+                <div class="section_065">
+                    <h4 class="section_068">Financial Services</h4>
+                    <span class="section_066">
+                        <a class="section_067" href="">Pay Later</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Export Factoring</a>
+                    </span>     
+                    <span class="section_066">
+                        <a class="section_067" href="">CogoFx</a>
+                    </span>                                         
+                </div>
+            </div>           
+        </div>
+        <div class="section_062">
+            <span class="section_063">Partners</span>
+            <div class="section_064">
+                <div class="section_065">
+                    <span class="section_066">
+                        <a class="section_067" href="">Global Partner Network</a>
+                    </span>
+                </div>
+                <div class="section_065">
+                    <h4 class="section_068">Our Logistics Providers</h4>
+                    <span class="section_066">
+                        <a class="section_067" href="">Freight Forwarders</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Transporters</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Custom Agents</a>
+                    </span>                                                           
+                </div>
+                <div class="section_065">
+                    <h4 class="section_068">Partnership Program</h4>
+                    <span class="section_066">
+                        <a class="section_067" href="">Channel Partners</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Overseas Agents</a>
+                    </span>                     
+                </div>
+            </div>            
+        </div>
+        <div class="section_062">
+            <span class="section_063">Tools</span>
+            <div class="section_064">
+                <div class="section_065">
+                    <span class="section_066">
+                        <a class="section_067" href="">Rate Discovery</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Freight Rate Trends</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Tracking</a>
+                    </span>    
+                    <span class="section_066">
+                        <a class="section_067" href="">HS Code Finder</a>
+                    </span>    
+                    <span class="section_066">
+                        <a class="section_067" href="">Personal Trade Assistant</a>
+                    </span>                                                                    
+                </div>
+            </div>             
+        </div>
+        <div class="section_062">
+            <span class="section_063">Company</span>
+            <div class="section_064">
+                <div class="section_065">
+                    <span class="section_066">
+                        <a class="section_067" href="">About us</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Careers</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Newsroom</a>
+                    </span>    
+                    <span class="section_066">
+                        <a class="section_067" href="">Leadership</a>
+                    </span>    
+                    <span class="section_066">
+                        <a class="section_067" href="">Login</a>
+                    </span>         
+                    <span class="section_066">
+                        <a class="section_067" href="">Sign Up</a>
+                    </span>                                                                                 
+                </div>
+            </div>             
+        </div>
+        <div class="section_062">
+            <span class="section_063">Knowledge Center</span>
+            <div class="section_064">
+                <div class="section_065">
+                    <span class="section_066">
+                        <a class="section_067" href="">Blogs</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">News & Updates</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Events</a>
+                    </span>    
+                    <span class="section_066">
+                        <a class="section_067" href="">Reports</a>
+                    </span>    
+                    <span class="section_066">
+                        <a class="section_067" href="">Notifications</a>
+                    </span>                                                                                          
+                </div>
+                <div class="section_065">
+                    <h4 class="section_068">Resources</h4>
+                    <span class="section_066">
+                        <a class="section_067" href="">Port info</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Shipping Terms</a>
+                    </span>
+                    <span class="section_066">
+                        <a class="section_067" href="">Help Center</a>
+                    </span>    
+                    <span class="section_066">
+                        <a class="section_067" href="">Incoterms</a>
+                    </span>                                                                                  
+                </div>                
+            </div>            
+        </div>
+    </div>
+    <div style="box-sizing: border-box; line-height: 1.5;">
+        <div class="section_069">
+            <div class="section_070">
+                <a class="section_071" href="">Talegoan (IN) to Southampton</a>
+                <a class="section_071" href="">Talegoan (IN) to Berbera</a>
+                <a class="section_071" href="">Talegoan (IN) to Halifax</a>
+                <a class="section_071" href="">Talegoan (IN) to Damietta</a>
+                <a class="section_071" href="">Talegoan (IN) to Callao</a>
+                <a class="section_071" href="">Talegoan (IN) to Savannah (US)</a>
+                <a class="section_071" href="">Talegoan (IN) to Charleston</a>
+                <a class="section_071" href="">Talegoan (IN) to Maputo</a>
+                <a class="section_071" href="">Talegoan (IN) to Freetown</a>
+                <a class="section_071" href="">Talegoan (IN) to Savannah, Georgia</a>
+            </div>
+            <div class="section_070">
+                <a class="section_071" href="">Talegoan (IN) to Istanbul</a>
+                <a class="section_071" href="">Talegoan (IN) to Mindelo</a>
+                <a class="section_071" href="">Talegoan (IN) to Conakry</a>
+                <a class="section_071" href="">Talegoan (IN) to Norfolk (US)</a>
+                <a class="section_071" href="">Talegoan (IN) to Ajman</a>
+                <a class="section_071" href="">Talegoan (IN) to Cape Town</a>
+                <a class="section_071" href="">Talegoan (IN) to Douala</a>
+                <a class="section_071" href="">Talegoan (IN) to Jebel Ali</a>
+                <a class="section_071" href="">Talegoan (IN) to Port Harcourt</a>
+                <a class="section_071" href="">Talegoan (IN) to Genoa</a>                
+            </div>
+            <div class="section_070">
+                <a class="section_071" href="">Talegoan (IN) to Rotterdam</a>
+                <a class="section_071" href="">Talegoan (IN) to Shuaiba</a>
+                <a class="section_071" href="">Talegoan (IN) to Veracruz</a>
+                <a class="section_071" href="">Talegoan (IN) to Durban</a>
+                <a class="section_071" href="">Talegoan (IN) to London gateway port</a>
+                <a class="section_071" href="">Talegoan (IN) to Haifa</a>
+                <a class="section_071" href="">Talegoan (IN) to Veracruz</a>
+                <a class="section_071" href="">Talegoan (IN) to Norfolk , Virginia</a>
+                <a class="section_071" href="">Talegoan (IN) to Aden</a>
+                <a class="section_071" href="">Talegoan (IN) to Gemlik</a>                
+            </div>
+        </div>
+    </div>
+    <div class="section_072">
+        <div class="section_073">
+            <span class="section_074">© 2023 Cogo Universe PTE. All rights reserved.</span>
+            <ul class="section_074">
+                <li class="section_075"><a style="color: #000;" href="">Terms and Conditions |</a></li>
+                <li class="section_075"><a style="color: #000;" href="">Cookie policy |</a></li>
+                <li class="section_075"><a style="color: #000;" href="">Privacy and Data Protection Policy</a></li>
+            </ul>
+        </div>
+        <div class="section_076">
+            <div>
+                <div style="box-sizing: border-box; line-height: 1.5;">
+                    <div role="button" aria-expanded="false">
+                        <div role="button" tabindex="0" class="section_077">
+                            <div class="section_078">
+                                <div>
+                                    <img src="images/1121.png" loading="lazy" width="20" height="20" alt="" style="color: transparent; margin-right: 5px;">
+                                </div>
+                                <div class="section_079">English (IN)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_080">
+                <a href=""><img src="images/linkedin.svg" alt=""></a>
+                <a href=""><img src="images/facebook.svg" alt=""></a>
+                <a href=""><img src="images/instagram.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
